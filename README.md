@@ -46,7 +46,7 @@ public class Main {
         try {
             Encoder en = new Encoder();
             try {
-                en.SetInputDataPath("e:/in2.data");
+                en.SetInputDataPath("e:/nicknames.csv");
                 en.SetOutputDataPath("e:/out.csv");
                 en.BuildDataset();
             } catch (Exception e){
