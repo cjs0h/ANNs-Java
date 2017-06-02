@@ -8,7 +8,7 @@ public class Neuron {
     private double _bias;                       // Bias value.
     private double _error;                      // Sum of error.
     private double _input;                      // Sum of inputs.
-    private double _lambda = 6;                // Steepness of sigmoid curve.
+    private double _lambda = .008;                // Steepness of sigmoid curve.
     private double _learnRate = .5;            // Learning rate.
     private double _output = Double.MIN_VALUE;   // Preset value of neuron.
     private List<Weight> _weights;              // Collection of weights to inputs.
