@@ -1,16 +1,12 @@
 package com.hayderalgorabi.ANNs;
-
-import java.io.*;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 public class Encoder {
     private String _DataPath;
-    private String _OutputDataPath = "e:/out.csv";
+    private String _OutputDataPath = "out.csv";
+    public void SetOutputDataPath(String OutputDataPath){
+        this._OutputDataPath = OutputDataPath;
+    }
     List<Dataset> ds = new ArrayList<Dataset>();
-    public void setDataPath(String path){
+    public void SetInputDataPath(String path){
         _DataPath = path;
     }
     public void BuildDataset() throws Exception {
@@ -80,7 +76,4 @@ public class Encoder {
         }
         return null;
     }
-
-
-
 }
