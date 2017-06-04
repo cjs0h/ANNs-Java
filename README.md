@@ -3,7 +3,7 @@
 
 ## Features
 * Easy to use
-* clene code
+* clean code
 * you can use text string as input and output
  
 
