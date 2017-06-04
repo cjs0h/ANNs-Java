@@ -95,4 +95,4 @@ the stuff.. :-)
 
 3) Send me a short email with error type and any other information you think is relevant, and I'll fix it. Jackpot.
 
-When I find a bug, I crush it. If I don't find it, and you do, and don't tell me, it lives and we all lose.. I'm not a mind-reader. Or a Computer-reader. I'm not one of the X-Men. i'm hayderalgorabi
+When I find a bug, I crush it. If I don't find it, and you do, and don't tell me, it lives and we all lose.. I'm not a mind-reader. Or a Computer-reader. I'm not one of the X-Men. i'm Hayder Alghurabi
