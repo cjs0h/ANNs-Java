@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            int InputNodes = 6;
+            int InputNodes = 2;
             int HiddenNodes = 12;
             double Error = 0.01;
             int Itertaion = 500;
