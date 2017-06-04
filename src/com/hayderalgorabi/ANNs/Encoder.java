@@ -1,4 +1,9 @@
 package com.hayderalgorabi.ANNs;
+import java.io.*;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 public class Encoder {
     private String _DataPath;
     private String _OutputDataPath = "out.csv";
