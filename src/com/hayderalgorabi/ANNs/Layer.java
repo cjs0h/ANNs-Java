@@ -12,9 +12,9 @@ public class Layer extends ArrayList<Neuron> {
 
     }
 
-    public Layer(int size, Layer layer, Random rnd) {
+    public Layer(int size, Layer layer, Random rnd, double plambda, double plearnRate) {
         for (int i = 0; (i < size); i++) {
-            super.add(new Neuron(layer, rnd));
+            super.add(new Neuron(layer, rnd, plambda, plearnRate));
         }
 
     }

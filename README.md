@@ -1,6 +1,11 @@
 # ANNs-Java
   this project is a simple implementation for back propagation neural network in java
 
+## Features
+* Easy to use
+* clene code
+* you can use text string as input and output
+ 
 
 # Usage 
 * import the package into ur project 
@@ -11,6 +16,10 @@
   * The acceptable error rate
   * training iteration
   * The full path for Patterns.csv
+* The lambda (Optional)
+* The learn Rate (Optional)
+
+
 * Now Make New Object for the Network class
   * [Normal Dataset](https://github.com/cjs0h/ANNs-Java#ex)
   * [String Dataset](https://github.com/cjs0h/ANNs-Java#ex2)
@@ -22,7 +31,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            int InputNodes = 6;
+            int InputNodes = 2;
             int HiddenNodes = 12;
             double Error = 0.01;
             int Itertaion = 500;
@@ -37,7 +46,11 @@ public class Main {
 ```
 
 ## Ex2:
+
+This is  example  using a  text strings csv file
+
 ```java
+
 package com.hayderalgorabi.ANNs;
 
 public class Main {
@@ -68,3 +81,18 @@ public class Main {
 ```
 ### ScreenShots 
 ![country capital](https://cdn.pbrd.co/images/dKlOo6uXD.png)
+
+## Note
+
+All efforts have been made to ensure the smooth and correct running of this Library.
+
+ If you find this Library is behaving abnormaly though, there are 3 options :
+
+1) recompile your app. Not an option I would advise.
+
+2) Write a harsh comment that says how this Library is a pile of **** and you can't believe I even dared to waste your time.. Again, not a great option, but it does make me laugh when I read some of 
+the stuff.. :-)
+
+3) Send me a short email with error type and any other information you think is relevant, and I'll fix it. Jackpot.
+
+When I find a bug, I crush it. If I don't find it, and you do, and don't tell me, it lives and we all lose.. I'm not a mind-reader. Or a Computer-reader. I'm not one of the X-Men. i'm hayderalgorabi
