@@ -14,8 +14,11 @@ public class Neuron {
     private List<Weight> _weights;              // Collection of weights to inputs.
     public Neuron() { }
 
-    public Neuron(Layer inputs, Random rnd)
+    public Neuron(Layer inputs, Random rnd, double plambda, double plearnRate)
     {
+_lambda = plambda;
+_learnRate = plearnRate;
+
         _weights = new ArrayList<Weight>();
         for (Neuron input : inputs) {
             Weight w = new Weight();

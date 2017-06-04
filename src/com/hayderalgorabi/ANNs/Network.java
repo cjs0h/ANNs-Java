@@ -19,6 +19,47 @@ public class Network {
     private Neuron _output;            // Output neuron.
     private Random _rnd = new Random(); // Global random number generator.
     private Encoder e;
+    private double _lambda = .008;                // Steepness of sigmoid curve.
+    private double _learnRate = .5;            // Learning rate.
+
+    public Network(int InputNodes,int HiddenNodes, double Error,int Itertaion, String PatternsPath,Encoder M, double plambda, double plearnRate) throws Exception
+    {
+        e = M;
+_lambda = plambda;
+_learnRate = plearnRate;
+        _hiddenDims = HiddenNodes;
+        _inputDims = InputNodes;
+        _error = Error;
+        _restartAfter = Itertaion;
+        _PatternsPath = PatternsPath;
+        long startTime = System.currentTimeMillis();
+        LoadPatterns();
+        Initialise();
+        Train();
+        long endTime   = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        System.out.println("execution time - " + totalTime);
+        Test();
+    }
+    public Network(int InputNodes,int HiddenNodes, double Error,int Itertaion, String PatternsPath, double plambda, double plearnRate
+) throws Exception
+    {
+_lambda = plambda;
+_learnRate = plearnRate;
+        _hiddenDims = HiddenNodes;
+        _inputDims = InputNodes;
+        _error = Error;
+        _restartAfter = Itertaion;
+        _PatternsPath = PatternsPath;
+        long startTime = System.currentTimeMillis();
+        LoadPatterns();
+        Initialise();
+        Train();
+        long endTime   = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        System.out.println("execution time - " + totalTime);
+        Test();
+    }
 
 
     public Network(int InputNodes,int HiddenNodes, double Error,int Itertaion, String PatternsPath,Encoder M) throws Exception
@@ -135,8 +176,8 @@ public class Network {
     private void Initialise()
     {
         _inputs = new Layer(_inputDims);
-        _hidden = new Layer(_hiddenDims, _inputs, _rnd);
-        _output = new Neuron(_hidden, _rnd);
+        _hidden = new Layer(_hiddenDims, _inputs, _rnd, _lambda, _learnRate);
+        _output = new Neuron(_hidden, _rnd, _lambda, _learnRate);
         _iteration = 0;
         System.out.println("Network Initialised");
     }
