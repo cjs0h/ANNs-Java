@@ -11,7 +11,7 @@
 * import the package into ur project 
 * create a Main class that Contain the main function
 * Now you Need to set the required parameters to run the network
-  * The input Nodes
+  * The input Nodes if you don't know the input size use 0 the lib will try to know it
   * The Hidden Nodes
   * The acceptable error rate
   * training iteration
