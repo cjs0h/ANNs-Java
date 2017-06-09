@@ -186,9 +186,14 @@ _learnRate = plearnRate;
         _patterns = new ArrayList<>();
         FileInputStream file = new FileInputStream(_PatternsPath);
         BufferedReader br = new BufferedReader(new InputStreamReader(file));
-        String strLine;
+string line;        
+String strLine;
         while ((strLine = br.readLine()) != null)
-        {
+if(        _inputDims==0)
+{
+        line = strLine.split(",");
+_inputDims=line.length - 1;
+}        {
             Pattern p = new Pattern(strLine, _inputDims);
             _patterns.add(p);
         }
